@@ -12,7 +12,25 @@ $ zola build
 $ cat public/categories/index.html
 ```
 
-That worked.
+That worked, and shows e.g.:
+
+```
+  "taxonomy": {
+    "name": "categories",
+    "paginate_by": null,
+    "paginate_path": null,
+    "rss": true,
+    "lang": "en"
+  },
+  "terms": [
+    {
+      "name": "tech",
+      "slug": "tech",
+      "permalink": "http://127.0.0.1:1111/categories/tech/",
+      "pages": [
+        {
+          "relative_path": "blog/2019-06-09-post-9.md",
+```
 
 Now:
 
@@ -20,7 +38,15 @@ Now:
 ../step-two.sh
 ```
 
-works (no errors by `zola serve`), and shows the matching posts. But now, control-C the `zola serve` and re-run it.
+works (no errors by `zola serve`), and shows the matching posts.
+It shows the same context output as before, and as expected:
+```
+<h2>categories</h2>
+
+<a href="http:&#x2f;&#x2f;127.0.0.1:1111&#x2f;categories&#x2f;tech&#x2f;">tech</a>
+```
+
+But now, control-C the `zola serve` and re-run it.
 This happens:
 
 ```
@@ -38,6 +64,3 @@ It is like it does not know the taxonomy yet.
 I thought I came across a related github issue, but I now cannot find it.
 
 How can I get past this?
-
-
-
