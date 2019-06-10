@@ -20,7 +20,7 @@ Now:
 ../step-two.sh
 ```
 
-works (no errors by `zola serve`, and shows the matching posts. But now, control-C the `zola serve` and re-run it.
+works (no errors by `zola serve`), and shows the matching posts. But now, control-C the `zola serve` and re-run it.
 This happens:
 
 ```
