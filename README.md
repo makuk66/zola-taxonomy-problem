@@ -1,3 +1,6 @@
+Update: ignore; now fixed.
+
+
 Setup with:
 
 ```
@@ -32,7 +35,7 @@ That worked, and shows e.g.:
           "relative_path": "blog/2019-06-09-post-9.md",
 ```
 
-Now:
+Run `zola serve`. Then:
 
 ```
 ../step-two.sh
@@ -59,8 +62,3 @@ Reason: Failed to render 'categories/list.html'
 Reason: Variable `taxonomy.name` not found in context while rendering 'categories/list.html'
 ```
 
-It is like it does not know the taxonomy yet.
-
-I thought I came across a related github issue, but I now cannot find it.
-
-How can I get past this?
