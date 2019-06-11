@@ -46,9 +46,10 @@ EOM
 touch templates/categories/single.html
 
 mkdir content/categories
-cat >content/categories/index.md<<'EOM'
+cat >content/categories/_index.md<<'EOM'
 +++
-template="categories/list.html"
+sort_by = "date"
+paginate_by = 100
 +++
 EOM
 
